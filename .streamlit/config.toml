@@ -1,0 +1,12 @@
+# Strictly local execution: bind to loopback only and disable telemetry.
+[server]
+address = "localhost"
+headless = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[client]
+showErrorDetails = false   # never show raw stack traces to operators
